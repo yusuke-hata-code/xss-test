@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var payload = document.location.hash.substr(1);
+      var objectElement = document.createElement('object');
+      var paramTypeElement = document.createElement('param');
+      var paramSrcElement = document.createElement('param');
+      var paramAllowScriptAccessElement = document.createElement('param');
+      paramTypeElement.name = 'type';
+      paramTypeElement.value = 'application/x-shockwave-flash';
+      paramAllowScriptAccessElement.name = 'allowScriptAccess';
+      paramAllowScriptAccessElement.value = 'always';
+      paramSrcElement.name = 'src';
+      paramSrcElement.value = DOMPurify.sanitize(payload);
+      objectElement.appendChild(paramAllowScriptAccessElement);
+      objectElement.appendChild(paramTypeElement);
+      objectElement.appendChild(paramSrcElement);
+      document.body.appendChild(objectElement);
+    </script>
+  </body>
+</html>

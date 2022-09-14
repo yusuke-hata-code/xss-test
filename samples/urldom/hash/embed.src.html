@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.hash.substr(1);
+      var embedElement = document.createElement('embed');
+      embedElement.src = payload;
+      document.body.appendChild(embedElement);
+    </script>
+  </body>
+</html>

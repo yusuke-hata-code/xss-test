@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.hash.substr(1);
+      var iframe = document.createElement('iframe');
+      iframe.src = payload;
+      document.body.appendChild(iframe);
+    </script>
+  </body>
+</html>

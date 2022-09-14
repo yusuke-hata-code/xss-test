@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.search.substr(1);
+      var form = document.createElement('form');
+      var button = document.createElement('button');
+      button.formAction = payload;
+      button.type = 'submit';
+      button.textContent = 'submit!';
+      document.body.appendChild(form);
+      form.appendChild(button);
+    </script>
+  </body>
+</html>

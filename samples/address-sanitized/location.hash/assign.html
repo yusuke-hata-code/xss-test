@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Address based DOM XSS</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var payload = window.location.hash.substr(1);
+      window.location.assign(DOMPurify.sanitize(payload));
+    </script>
+  </body>
+</html>

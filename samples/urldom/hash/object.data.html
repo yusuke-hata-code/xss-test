@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.hash.substr(1);
+      var objectElement = document.createElement('object');
+      objectElement.data = payload;
+      document.body.appendChild(objectElement);
+    </script>
+  </body>
+</html>

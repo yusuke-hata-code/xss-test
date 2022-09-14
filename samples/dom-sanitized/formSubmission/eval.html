@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function deferredPayload() {
+        // Sync trigger.
+        eval(DOMPurify.sanitize(payload));
+
+        // Async trigger.
+        function trigger(payload) {
+          eval(DOMPurify.sanitize(payload));
+        }
+      }
+      var form = document.createElement('form');
+
+      var input = document.createElement('input');
+      input.setAttribute('id', 'userInput');
+
+      var submit = document.createElement('input');
+      submit.setAttribute('type', 'submit');
+
+      form.setAttribute('action', '#');
+      form.appendChild(input);
+      form.appendChild(submit);
+
+      var payload = '';
+      form.onsubmit = function () {
+        payload = document.getElementById('userInput').value;
+        deferredPayload();
+        return false;
+      };
+
+      document.body.appendChild(form); // Sync trigger.
+      eval(DOMPurify.sanitize(payload));
+
+      // Async trigger.
+      function trigger(payload) {
+        eval(DOMPurify.sanitize(payload));
+      }
+    </script>
+  </body>
+</html>

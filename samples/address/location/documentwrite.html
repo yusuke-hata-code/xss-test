@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Address based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = window.location;
+      document.write(payload);
+    </script>
+  </body>
+</html>

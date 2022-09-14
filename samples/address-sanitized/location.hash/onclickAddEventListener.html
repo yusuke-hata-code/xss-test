@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Address based DOM XSS</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var payload = window.location.hash.substr(1);
+      var div = document.createElement('div');
+      div.addEventListener(
+        'click',
+        new Function(DOMPurify.sanitize(payload)),
+        false
+      );
+      document.documentElement.appendChild(div);
+    </script>
+  </body>
+</html>

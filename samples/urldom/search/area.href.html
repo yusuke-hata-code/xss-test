@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.search.substr(1);
+      var area = document.createElement('area');
+      area.href = payload;
+      area.textContent = "Here's an area element";
+      document.body.appendChild(area);
+    </script>
+  </body>
+</html>

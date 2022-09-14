@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Address based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = window.location.hash.substr(1);
+      var div = document.createElement('div');
+      div.addEventListener('click', new Function(payload), false);
+      document.documentElement.appendChild(div);
+    </script>
+  </body>
+</html>

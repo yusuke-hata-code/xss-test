@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Address based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = window.location;
+      var div = document.createElement('div');
+      div.id = 'divEl';
+      document.documentElement.appendChild(div);
+
+      var divEl = document.getElementById('divEl');
+      divEl.innerHTML = payload;
+    </script>
+  </body>
+</html>

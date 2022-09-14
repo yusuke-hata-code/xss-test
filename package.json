@@ -1,0 +1,28 @@
+{
+  "name": "xss-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "vitest -w false",
+    "test:junit": "vitest -w false --reporter=junit --outputFile.junit=./test-result.xml",
+    "test:open": "vitest --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusuke-hata-code/xss-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusuke-hata-code/xss-test/issues"
+  },
+  "homepage": "https://github.com/yusuke-hata-code/xss-test#readme",
+  "dependencies": {
+    "vitest": "^0.23.2",
+    "@vitest/ui": "^0.23.2"
+  }
+}

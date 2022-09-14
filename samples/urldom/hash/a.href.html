@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.hash.substr(1);
+      var anchor = document.createElement('a');
+      anchor.href = payload;
+      anchor.text = "Here's an anchor link";
+      document.body.appendChild(anchor);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.hash.substr(1);
+      var baseElement = document.createElement('base');
+      baseElement.href = payload;
+      document.head.appendChild(baseElement);
+
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'exploit.js';
+      document.body.appendChild(scriptTag);
+    </script>
+  </body>
+</html>

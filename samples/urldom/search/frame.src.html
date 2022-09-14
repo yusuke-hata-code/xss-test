@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>URL-based DOM XSS</title>
+  </head>
+  <body>
+    <script>
+      var payload = document.location.search.substr(1);
+      var frame = document.createElement('frame');
+      frame.src = payload;
+      document.body.appendChild(frame);
+    </script>
+  </body>
+</html>

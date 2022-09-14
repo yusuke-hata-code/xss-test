@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const postMessageHandler = function (msg) {
+        let action = msg.data.action;
+        if (action === 'exec') {
+          eval(DOMPurify.sanitize(msg.data.payload));
+        } else if (action === 'addImage') {
+          document.write(
+            '<img href=' + DOMPurify.sanitize(msg.data.source) + '>'
+          );
+        } else if (action === 'addHtml') {
+          document.write(DOMPurify.sanitize(msg.data.html));
+        } else {
+          console.debug('unsupported command');
+        }
+      };
+
+      window.addEventListener('message', postMessageHandler, false);
+    </script>
+  </body>
+</html>
