@@ -24,10 +24,10 @@ git submodule foreach git pull origin main
 /**
  * 検知システムを実行（サンプル毎に呼び出される）
  * @param {string} baseDir `samples/ジャンル` ディレクトリの絶対パス
- * @param {string} path baseDir以下のパス
+ * @param {string} pathName baseDir以下のパス
  * @return {boolean} 検知結果
  */
-export default async ({ baseDir, path }) => {
+export default async ({ baseDir, pathName }) => {
   return true;
 };
 ```
@@ -35,8 +35,10 @@ export default async ({ baseDir, path }) => {
 ### サンプルのローカルファイルパスを用いる例
 
 ```javascript
-export default async ({ baseDir, path }) => {
-  const fullPath = `${path.join(baseDir, path)}`;
+import path from 'path';
+
+export default async ({ baseDir, pathName }) => {
+  const fullPath = `${path.join(baseDir, pathName)}`;
   const result = await YOUR_ANALYZE_SYSTEM(fullPath);
   return Boolean(result);
 };
@@ -45,8 +47,8 @@ export default async ({ baseDir, path }) => {
 ### サンプルの url を用いる例
 
 ```javascript
-export default async ({ path }) => {
-  const url = new URL(path, 'http://localhost:8888/').href;
+export default async ({ pathName }) => {
+  const url = new URL(pathName, 'http://localhost:8888/').href;
   const result = await YOUR_ANALYZE_SYSTEM(url);
   return Boolean(result);
 };
