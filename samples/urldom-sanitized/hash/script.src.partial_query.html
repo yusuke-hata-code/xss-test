@@ -12,11 +12,12 @@
     <script>
       var payload = document.location.hash.substr(1);
       var scriptElement = document.createElement('script');
-      scriptElement.src =
+      scriptElement.src = DOMPurify.sanitize(
         location.origin +
-        '/urldom/jsonp?referrer=' +
-        DOMPurify.sanitize(payload) +
-        '&callback=helloWorld';
+          '/urldom/jsonp?referrer=' +
+          payload +
+          '&callback=helloWorld'
+      );
       document.body.appendChild(scriptElement);
       function helloWorld(data) {
         var divElement = document.createElement('div');
