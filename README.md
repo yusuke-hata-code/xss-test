@@ -1,4 +1,4 @@
-# Usage
+# 使い方
 
 ## 1. submodule の追加
 
@@ -6,6 +6,12 @@
 
 ```bash
 git submodule add git@github.com:yusuke-hata-code/xss-test.git
+```
+
+submodule の更新方法
+
+```bash
+git submodule foreach git pull origin main
 ```
 
 ## 2. assertXSS.mjs の作成
@@ -78,10 +84,8 @@ npm run test:open
 
 - test 以下に、ジャンル.test.mjs ファイルを作ってください
 
-```
-
+```text
 test
-
 - ジャンル.test.mjs
 - samples/
   - ジャンル/
@@ -89,7 +93,6 @@ test
       - Sink の名前.html
       - Sink の名前.html
       - Sink の名前.html
-
 ```
 
 - ジャンル.test.mjs の内容は以下の通り、expectBoolean のみ指定してください
