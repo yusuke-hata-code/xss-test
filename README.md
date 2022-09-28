@@ -82,22 +82,22 @@ npm run test:open
 
 # テストサンプルの追加方法
 
-- samples 以下にジャンル名でディレクトリを作り、そのディレクトリ内に Source ごとにディレクトリと作ってその中に Sink ごとに html ファイルを追加してください
+- samples 以下にカテゴリ名でディレクトリを作り、そのディレクトリ内に Source ごとにディレクトリと作ってその中に Sink ごとに html ファイルを追加してください
 
-- test 以下に、ジャンル.test.mjs ファイルを作ってください
+- test 以下に、カテゴリ.test.mjs ファイルを作ってください
 
 ```text
 test
-- ジャンル.test.mjs
+- カテゴリ.test.mjs
 - samples/
-  - ジャンル/
+  - カテゴリ/
     - Source 名前のディレクトリ/
       - Sink の名前.html
       - Sink の名前.html
       - Sink の名前.html
 ```
 
-- ジャンル.test.mjs の内容は以下の通り、expectBoolean のみ指定してください
+- カテゴリ.test.mjs の内容は以下の通り、expectBoolean のみ指定してください
 
 ```javascript
 import { makeBoolTest } from './lib/makeTest.js';
