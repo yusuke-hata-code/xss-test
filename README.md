@@ -23,11 +23,11 @@ git submodule foreach git pull origin main
 // 最小構成例
 /**
  * 検知システムを実行（サンプル毎に呼び出される）
- * @param {string} baseDir samplesディレクトリの絶対パス
- * @param {string} pathName baseDir以下のパス
+ * @param {string} fullPath サンプルのローカルファイルパス
+ * @param {string} url url
  * @return {boolean} 検知結果
  */
-export default async ({ baseDir, pathName }) => {
+export default async ({ fullPath, url }) => {
   return true;
 };
 ```
@@ -35,10 +35,7 @@ export default async ({ baseDir, pathName }) => {
 ### サンプルのローカルファイルパスを用いる例
 
 ```javascript
-import path from 'path';
-
-export default async ({ baseDir, pathName }) => {
-  const fullPath = `${path.join(baseDir, pathName)}`;
+export default async ({ fullPath }) => {
   const result = await YOUR_ANALYZE_SYSTEM(fullPath);
   return Boolean(result);
 };
@@ -47,8 +44,7 @@ export default async ({ baseDir, pathName }) => {
 ### サンプルの url を用いる例
 
 ```javascript
-export default async ({ pathName }) => {
-  const url = new URL(pathName, 'http://localhost:8888/').href;
+export default async ({ url }) => {
   const result = await YOUR_ANALYZE_SYSTEM(url);
   return Boolean(result);
 };
@@ -59,7 +55,7 @@ export default async ({ pathName }) => {
 `vitest` と `@vitest/ui` を自身のリポジトリにインストールする
 
 ```bash
-npm i vitest @vitest/ui
+npm i -D vitest @vitest/ui serve-handler
 ```
 
 package.json に以下を追記
