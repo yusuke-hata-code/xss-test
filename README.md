@@ -23,7 +23,7 @@ git submodule foreach git pull origin main
 // 最小構成例
 /**
  * 検知システムを実行（サンプル毎に呼び出される）
- * @param {string} baseDir `samples/ジャンル` ディレクトリの絶対パス
+ * @param {string} baseDir samplesディレクトリの絶対パス
  * @param {string} pathName baseDir以下のパス
  * @return {boolean} 検知結果
  */
