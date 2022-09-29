@@ -93,6 +93,19 @@ npm run test
 # GUI
 npm run test:open
 ```
+# テストサンプルの概要
+
+合計178サンプル
+| カテゴリ|サンプル数|概要|
+| ---- | ---- |----|
+|  address |  29  |firing rangeのAddress DOM XSSサンプル|
+|  address-sanitized |  29  |firing rangeのAddress DOM XSSサンプルを無害化したもの|
+|  dom |  34  |firing rangeのAddress DOM XSSサンプル|
+|  dom-sanitized |  34  |firing rangeのAddress DOM XSSサンプルを無害化したもの|
+|urldom|26|firing rangeのUIRL-based DOM XSSサンプル|
+|urldom-sanitized|26|firing rangeのUIRL-based DOM XSSサンプルを無害化したもの|
+
+- 無害化はDOMPurify.sanitized()を用いてサニタイズを行っている．
 
 # テストサンプルの追加方法
 
