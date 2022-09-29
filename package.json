@@ -7,10 +7,18 @@
   "directories": {
     "lib": "lib"
   },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "prettier": "^2.7.1"
+  },
   "scripts": {
     "test": "vitest -w false",
-    "test:junit": "vitest -w false --reporter=junit --outputFile.junit=./test-result.xml",
-    "test:open": "vitest --ui"
+    "test:open": "vitest --ui",
+    "lint": "eslint . --cache --cache-location node_modules/.cache/.eslintcache --ignore-pattern node_modules/",
+    "format": "npm run lint -- --fix; prettier --cache --ignore-unknown --write --loglevel warn '{,!(node_modules)/**/}*'",
+    "format-check": "prettier --cache --ignore-unknown --check '{,!(node_modules)/**/}*'"
   },
   "repository": {
     "type": "git",
