@@ -96,7 +96,7 @@ npm run test:open
 
 ## 4. vite.config(並列処理では動かない場合)
 
-並列処理を停止したい->以下のようにvite.config.jsを自身のリポジトリのrootに追加する
+並列処理を停止したい→以下のようにvite.config.jsを自身のリポジトリのrootに追加する
 ```javascript
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
