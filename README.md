@@ -61,7 +61,7 @@ export const assertXSS = async ({ url }) => {
 
 ```json
 export const setting = {
-  webServer: false, //webServerを起動する
+  disableWebServer: false, //webServerを起動しない
   testConcurrent: false, //同カテゴリ下のテストを並行実行する
   fileExtensions: ['.html'], //テストする拡張子指定
   skipSanitizedSamples: false, //無害化サンプルテストをスキップする
