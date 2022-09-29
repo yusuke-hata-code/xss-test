@@ -55,16 +55,27 @@ export const assertXSS = async ({ url }) => {
 };
 ```
 
+### assertSnapshotXSS 関数の定義
+
+- snapshot テスト用、返り値はなんでもよい
+
+```javascript
+export const assertSnapshotXSS = async ({ url }) => {
+  return url;
+};
+```
+
 ### オプションの設定
 
 - 以下はデフォルト値
 
 ```json
 export const setting = {
-  webServer: false, //webServerを起動する
+  disableWebServer: false, //webServerを起動しない
   testConcurrent: false, //同カテゴリ下のテストを並行実行する
   fileExtensions: ['.html'], //テストする拡張子指定
   skipSanitizedSamples: false, //無害化サンプルテストをスキップする
+  snapshotWebserverPort: 8888, //snapshotテスト時のwebサーバのポート、0でauto
 };
 ```
 
