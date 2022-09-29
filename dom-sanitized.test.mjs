@@ -1,4 +1,4 @@
-import { makeBoolTest } from './lib/makeTest.js';
+import { makeBoolTest } from './lib/makeTest.mjs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
