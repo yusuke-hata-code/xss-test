@@ -3,1245 +3,1245 @@
 exports[`address > URL-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > URLUnencoded-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > baseURI-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > documentURI-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-assign.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-documentwriteln.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-formaction.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-function.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-inlineevent.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-jshref.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-onclickAddEventListener.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-onclickSetAttribute.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-rangeCreateContextualFragment.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-replace.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location.hash-setTimeout.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-assign.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-documentwriteln.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-rangeCreateContextualFragment.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-replace.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > location-setTimeout.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > locationhref-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > locationpathname-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address > locationsearch-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > URL-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > URLUnencoded-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > baseURI-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > documentURI-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-assign.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-documentwriteln.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-formaction.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-function.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-inlineevent.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-jshref.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-onclickAddEventListener.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-onclickSetAttribute.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-rangeCreateContextualFragment.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-replace.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location.hash-setTimeout.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-assign.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-documentwriteln.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-rangeCreateContextualFragment.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-replace.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > location-setTimeout.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > locationhref-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > locationpathname-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`address-sanitized > locationsearch-documentwrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > cookie_set-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > cookie_set-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > cookie_set-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > cookie-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > dompropagation-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > formSubmission-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > formSubmission-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > formSubmission-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > inputTyping-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > inputTyping-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > inputTyping-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > javascripturi-jshref.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > localstorage_array-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > localstorage_function-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > localstorage_function-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > localstorage_function-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > localstorage_property-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > name-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > name-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > name-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > postMessage-complexMessageDocumentWriteEval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > postMessage-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > postMessage-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > postMessage-improperOriginValidationWithPartialStringComparison.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > postMessage-improperOriginValidationWithRegExp.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > postMessage-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > referrer-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > referrer-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > referrer-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > sessionstorage_array-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > sessionstorage_function-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > sessionstorage_function-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > sessionstorage_function-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom > sessionstorage_property-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > cookie_set-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > cookie_set-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > cookie_set-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > cookie-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > dompropagation-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > formSubmission-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > formSubmission-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > formSubmission-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > inputTyping-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > inputTyping-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > inputTyping-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > javascripturi-jshref.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > localstorage_array-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > localstorage_function-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > localstorage_function-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > localstorage_function-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > localstorage_property-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > name-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > name-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > name-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > postMessage-complexMessageDocumentWriteEval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > postMessage-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > postMessage-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > postMessage-improperOriginValidationWithPartialStringComparison.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > postMessage-improperOriginValidationWithRegExp.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > postMessage-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > referrer-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > referrer-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > referrer-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > sessionstorage_array-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > sessionstorage_function-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > sessionstorage_function-eval.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > sessionstorage_function-innerHtml.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`dom-sanitized > sessionstorage_property-documentWrite.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-a.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-base.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-document.location.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-embed.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-fetch.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-form.action.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-iframe.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-input.formaction.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-link.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-object.data.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-param.code.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-param.movie.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-param.src.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-param.url.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-script.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-script.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-script.src.partial_domain.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-script.src.partial_path.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-script.src.partial_query.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-window.open.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > hash-xhr.open.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > search-area.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > search-button.formaction.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > search-frame.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > search-location.assign.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom > search-svg.a.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-a.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-base.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-document.location.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-embed.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-fetch.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-form.action.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-iframe.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-input.formaction.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-link.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-object.data.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-param.code.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-param.movie.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-param.src.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-param.url.value.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-script.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-script.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-script.src.partial_domain.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-script.src.partial_path.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-script.src.partial_query.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-window.open.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > hash-xhr.open.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > search-area.href.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > search-button.formaction.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > search-frame.src.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > search-location.assign.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
 
 exports[`urldom-sanitized > search-svg.a.html 1`] = `
 Object {
   "hoge": "foo123",
-  "value": 1,
+  "value": 2,
 }
 `;
