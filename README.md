@@ -16,7 +16,7 @@ git submodule foreach git pull origin main
 
 ## 2. assertXSS.mjs の作成
 
-- `xss-test/assertXSS.mjs`を作成
+- サブモジュールと同じ階層に `xss-test.mjs` を作成
 - 検知結果を Boolean で返す
 
 ```javascript
