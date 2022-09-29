@@ -92,7 +92,8 @@ package.json に以下を追記
 ```json
 "scripts": {
   "test": "vitest -w false",
-  "test:open": "vitest --ui"
+  "test:open": "vitest --ui",
+  "test-u": "vitest -u"
 }
 ```
 
@@ -103,6 +104,8 @@ package.json に以下を追記
 npm run test
 # GUI
 npm run test:open
+# snapshotの更新
+npm run test-u
 ```
 
 # テストサンプルの追加方法
