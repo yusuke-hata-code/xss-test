@@ -17,6 +17,11 @@ git submodule foreach git pull origin main
 ## 2. assertXSS.mjs の作成
 
 - サブモジュールと同じ階層に `xss-test.mjs` を作成
+- assertXSS 関数の定義
+- setting の定義(optional)
+
+### assertXSS 関数の定義
+
 - 検知結果を Boolean で返す
 
 ```javascript
@@ -27,26 +32,39 @@ git submodule foreach git pull origin main
  * @param {string} url url
  * @return {boolean} 検知結果
  */
-export default async ({ fullPath, url }) => {
+export const assertXSS = async ({ fullPath, url }) => {
   return true;
 };
 ```
 
-### サンプルのローカルファイルパスを用いる例
+サンプルのローカルファイルパスを用いる例
 
 ```javascript
-export default async ({ fullPath }) => {
+export  const assertXSS = ({ fullPath }) => {
   const result = await YOUR_ANALYZE_SYSTEM(fullPath);
   return Boolean(result);
 };
 ```
 
-### サンプルの url を用いる例
+サンプルの url を用いる例
 
 ```javascript
-export default async ({ url }) => {
+export const assertXSS = async ({ url }) => {
   const result = await YOUR_ANALYZE_SYSTEM(url);
   return Boolean(result);
+};
+```
+
+### オプションの設定
+
+- 以下はデフォルト値
+
+```json
+export const setting = {
+  webServer: false, //webServerを起動する
+  testConcurrent: false, //同カテゴリ下のテストを並行実行する
+  fileExtensions: ['.html'], //テストする拡張子指定
+  skipSanitizedSamples: false, //無害化サンプルテストをスキップする
 };
 ```
 
