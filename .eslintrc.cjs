@@ -3,12 +3,7 @@ module.exports = {
     es2022: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:unicorn/recommended',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ['eslint:recommended', 'plugin:unicorn/recommended'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -59,17 +54,6 @@ module.exports = {
     'import/newline-after-import': 'warn',
     'import/no-duplicates': 'warn',
     'import/no-default-export': 'warn',
-    '@typescript-eslint/padding-line-between-statements': [
-      'warn',
-      { blankLine: 'always', prev: '*', next: 'type' },
-      { blankLine: 'always', prev: 'type', next: '*' },
-    ],
-    '@typescript-eslint/naming-convention': [
-      'warn',
-      { selector: 'typeLike', format: ['PascalCase'] },
-    ],
-    '@typescript-eslint/sort-type-union-intersection-members': 'warn',
-    '@typescript-eslint/consistent-type-imports': 'warn',
     'unicorn/prefer-top-level-await': 'off',
     'unicorn/no-await-expression-member': 'off',
     'unicorn/prevent-abbreviations': 'off',
@@ -86,7 +70,7 @@ module.exports = {
       },
     ],
     'unicorn/filename-case': [
-      'warn',
+      'off',
       {
         cases: {
           camelCase: true,
