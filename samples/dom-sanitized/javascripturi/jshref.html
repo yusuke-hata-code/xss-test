@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>URL-based DOM XSS</title>
+    <title>javascript:-URI</title>
   </head>
   <body>
     <script
@@ -9,13 +9,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script>
-      var payload = document.location.hash.substr(1);
-      var scriptElement = document.createElement('script');
-      scriptElement.src = DOMPurify.sanitize(
-        location.origin + payload + '/script.js'
-      );
-      document.body.appendChild(scriptElement);
-    </script>
+    <a href="javascript:location.href=DOMPurify.sanitize(location.href)"
+      >Click me to refresh</a
+    >
   </body>
 </html>

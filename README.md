@@ -1,21 +1,99 @@
-テストを追加する場合
+# 使い方
 
-- samples 以下にジャンル名でディレクトリを作り、そのディレクトリ内に Source ごとにディレクトリと作ってその中に Sink ごとに html ファイルを追加してください
+## 1. submodule の追加
 
-- test 以下に、ジャンル.test.mjs ファイルを作ってください
+自身のシステムに本リポジトリを submodule として取り込む
 
+```bash
+git submodule add git@github.com:yusuke-hata-code/xss-test.git
 ```
+
+submodule の更新方法
+
+```bash
+git submodule foreach git pull origin main
+```
+
+## 2. assertXSS.mjs の作成
+
+- サブモジュールと同じ階層に `xss-test.mjs` を作成
+- 検知結果を Boolean で返す
+
+```javascript
+// 最小構成例
+/**
+ * 検知システムを実行（サンプル毎に呼び出される）
+ * @param {string} fullPath サンプルのローカルファイルパス
+ * @param {string} url url
+ * @return {boolean} 検知結果
+ */
+export default async ({ fullPath, url }) => {
+  return true;
+};
+```
+
+### サンプルのローカルファイルパスを用いる例
+
+```javascript
+export default async ({ fullPath }) => {
+  const result = await YOUR_ANALYZE_SYSTEM(fullPath);
+  return Boolean(result);
+};
+```
+
+### サンプルの url を用いる例
+
+```javascript
+export default async ({ url }) => {
+  const result = await YOUR_ANALYZE_SYSTEM(url);
+  return Boolean(result);
+};
+```
+
+## 3. vitest の install
+
+`vitest` と `@vitest/ui` を自身のリポジトリにインストールする
+
+```bash
+npm i -D vitest @vitest/ui serve-handler
+```
+
+package.json に以下を追記
+
+```json
+"scripts": {
+  "test": "vitest -w false",
+  "test:open": "vitest --ui"
+}
+```
+
+実行
+
+```bash
+# CUI
+npm run test
+# GUI
+npm run test:open
+```
+
+# テストサンプルの追加方法
+
+- samples 以下にカテゴリ名でディレクトリを作り、そのディレクトリ内に Source ごとにディレクトリと作ってその中に Sink ごとに html ファイルを追加してください
+
+- test 以下に、カテゴリ.test.mjs ファイルを作ってください
+
+```text
 test
-- ジャンル.test.mjs
+- カテゴリ.test.mjs
 - samples/
-  - ジャンル/
+  - カテゴリ/
     - Source 名前のディレクトリ/
       - Sink の名前.html
       - Sink の名前.html
       - Sink の名前.html
 ```
 
-- ジャンル.test.mjs の内容は以下の通り、expectBoolean のみ指定してください
+- カテゴリ.test.mjs の内容は以下の通り、expectBoolean のみ指定してください
 
 ```javascript
 import { makeBoolTest } from './lib/makeTest.js';
