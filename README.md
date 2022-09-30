@@ -8,11 +8,21 @@
 git submodule add git@github.com:yusuke-hata-code/xss-test.git
 ```
 
-submodule の更新方法
+バージョンを指定する場合
 
 ```bash
-git submodule foreach git pull origin main
+cd xss-test
+# バージョン一覧
+git tag
+git checkout 1.1.0
 ```
+
+> **Note**
+> submodule の更新方法
+>
+> ```bash
+> git submodule foreach git pull origin main
+> ```
 
 ## 2. assertXSS.mjs の作成
 
@@ -107,6 +117,18 @@ npm run test:open
 # snapshotの更新
 npm run test-u
 ```
+
+# バージョンの変更基準について
+
+`major.minor.patch` の形式
+
+|        | 変更基準                           |
+| ------ | ---------------------------------- |
+| major  | サンプルの変更                     |
+| mainor | ユーザ側での設定変更が必要         |
+| patch  | その他(ユーザ側での設定変更は不要) |
+
+個別の詳細は [Releases](https://github.com/yusuke-hata-code/xss-test/releases) にて
 
 # テストサンプルの追加方法
 
