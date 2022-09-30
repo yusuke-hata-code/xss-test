@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script>
+      if (!sessionStorage.badValue) {
+        sessionStorage.badValue = Math.random();
+      }
+
+      setTimeout(function () {
+        trigger(sessionStorage.badValue); // Using the async trigger.
+
+        // Clean up the sessionStorage to avoid side-effects on subsequent tests.
+        sessionStorage.clear();
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        document.write(payload);
+      }
+    </script>
+  </body>
+</html>

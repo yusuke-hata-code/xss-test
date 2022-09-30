@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script>
+      if (!sessionStorage.getItem('badValue')) {
+        sessionStorage.setItem('badValue', Math.random());
+      }
+
+      setTimeout(function () {
+        trigger(sessionStorage.getItem('badValue'));
+        // Clean up the sessionStorage to avoid side-effects on subsequent tests.
+        sessionStorage.clear();
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        eval(payload);
+      }
+    </script>
+  </body>
+</html>
