@@ -81,13 +81,11 @@ export const setting = {
 
 ## 3. vitest の install
 
-`vitest` と `@vitest/ui` を自身のリポジトリにインストールする
-
 ```bash
 npm i -D vitest @vitest/ui serve-handler
 ```
 
-package.json に以下を追記
+自リポジトリのpackage.json に以下を追記
 
 ```json
 "scripts": {
@@ -95,6 +93,25 @@ package.json に以下を追記
   "test:open": "vitest --ui",
   "test-u": "vitest -u"
 }
+```
+
+自リポジトリ直下にvitest.config.js を作成
+
+```javascript
+import { defineConfig } from 'vitest/config';
+import path from 'path';
+
+export default defineConfig({
+  test: {
+    resolveSnapshotPath: (testPath, snapExtension) => {
+      return path.join(
+        path.dirname(testPath),
+        '../__snapshots__',
+        path.basename(testPath) + snapExtension
+      );
+    },
+  },
+});
 ```
 
 実行
