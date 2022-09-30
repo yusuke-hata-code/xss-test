@@ -8,10 +8,14 @@
         window.name = "badvalue='a'";
       }
 
-      var payload = window.name;
+      setTimeout(function () {
+        trigger(window.name);
+      }, 10);
 
-      // Sync trigger.
-      document.write(payload);
+      // Async trigger.
+      function trigger(payload) {
+        document.write(payload);
+      }
     </script>
   </body>
 </html>
