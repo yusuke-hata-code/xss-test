@@ -95,7 +95,7 @@ export const setting = {
 npm i -D vitest @vitest/ui serve-handler
 ```
 
-自リポジトリのpackage.json に以下を追記
+自リポジトリの package.json に以下を追記
 
 ```json
 "scripts": {
@@ -107,7 +107,7 @@ npm i -D vitest @vitest/ui serve-handler
 }
 ```
 
-自リポジトリ直下にvitest.config.js を作成
+自リポジトリ直下に vitest.config.js を作成
 
 ```javascript
 import { defineConfig } from 'vitest/config';
@@ -151,17 +151,17 @@ npm run test-u
 
 # テストサンプルの概要
 
-合計178サンプル
+合計 178 サンプル
 | カテゴリ|サンプル数|概要|
 | ---- | ---- |----|
-|  [address](./samples/address/) |  29  |firing rangeのAddress DOM XSSサンプル|
-|  [address-sanitized](./samples/address-sanitized/) |  29  |firing rangeのAddress DOM XSSサンプルを無害化したもの|
-|  [dom](./samples/dom/) |  34  |firing rangeのAddress DOM XSSサンプル|
-|  [dom-sanitized](./samples/dom-sanitized/) |  34  |firing rangeのAddress DOM XSSサンプルを無害化したもの|
-|[urldom](./samples/urldom/)|26|firing rangeのUIRL-based DOM XSSサンプル|
-|[urldom-sanitized](./samples/urldom-sanitized/)|26|firing rangeのUIRL-based DOM XSSサンプルを無害化したもの|
+| [address](./samples/address/) | 29 |firing range の Address DOM XSS サンプル|
+| [address-sanitized](./samples/address-sanitized/) | 29 |firing range の Address DOM XSS サンプルを無害化したもの|
+| [dom](./samples/dom/) | 34 |firing range の Address DOM XSS サンプル|
+| [dom-sanitized](./samples/dom-sanitized/) | 34 |firing range の Address DOM XSS サンプルを無害化したもの|
+|[urldom](./samples/urldom/)|26|firing range の UIRL-based DOM XSS サンプル|
+|[urldom-sanitized](./samples/urldom-sanitized/)|26|firing range の UIRL-based DOM XSS サンプルを無害化したもの|
 
-- 無害化はDOMPurify.sanitized()を用いてサニタイズを行っている．
+- 無害化は DOMPurify.sanitized()を用いてサニタイズを行っている．
 
 # テストサンプルの追加方法
 
@@ -186,5 +186,3 @@ xss-test
 import { makeBoolTest } from './lib/makeTest.js';
 makeBoolTest({ FILENAME: __filename, DIRNAME: __dirname, expectBoolean: true }
 ```
-
-- lib/assrtXSS.mjs の中の isXSS 関数を自分の検知システムを実行するように変更してください。返り値が Boolean になるようにしてください
