@@ -27,11 +27,6 @@
       );
       // Sync trigger.
       eval(DOMPurify.sanitize(payload));
-
-      // Async trigger.
-      function trigger(payload) {
-        eval(DOMPurify.sanitize(payload));
-      }
     </script>
   </body>
 </html>

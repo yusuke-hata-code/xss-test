@@ -10,17 +10,22 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      if (document.referrer == '') {
-        // If the referrer is not set, we set the referrer by reloading the page.
-        location.href = location.href;
-      } else {
-        var payload = "referrer = '" + document.referrer + "'";
+      if (!sessionStorage.getItem('badValue')) {
+        sessionStorage.setItem('badValue', Math.random());
       }
+
+      setTimeout(function () {
+        trigger(sessionStorage.getItem('badValue'));
+        // Clean up the sessionStorage to avoid side-effects on subsequent tests.
+        sessionStorage.clear();
+      }, 10);
       var div = document.createElement('div');
       document.documentElement.appendChild(div);
 
-      // Sync trigger.
-      div.innerHTML = DOMPurify.sanitize(payload);
+      // Async trigger.
+      function trigger(payload) {
+        div.innerHTML = DOMPurify.sanitize(payload);
+      }
     </script>
   </body>
 </html>

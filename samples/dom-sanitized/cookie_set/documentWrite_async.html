@@ -28,10 +28,14 @@
         document.cookie = 'badValue="a"';
       }
 
-      var payload = lookupCookie('badValue');
+      setTimeout(function () {
+        trigger(lookupCookie('badValue'));
+      }, 10);
 
-      // Sync trigger.
-      document.write(DOMPurify.sanitize(payload));
+      // Async trigger.
+      function trigger(payload) {
+        document.write(DOMPurify.sanitize(payload));
+      }
     </script>
   </body>
 </html>

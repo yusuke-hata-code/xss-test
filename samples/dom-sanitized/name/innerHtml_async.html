@@ -10,17 +10,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      if (document.referrer == '') {
-        // If the referrer is not set, we set the referrer by reloading the page.
-        location.href = location.href;
-      } else {
-        var payload = "referrer = '" + document.referrer + "'";
+      if (window.name == '') {
+        window.name = "badvalue='a'";
       }
+
+      setTimeout(function () {
+        trigger(window.name);
+      }, 10);
       var div = document.createElement('div');
       document.documentElement.appendChild(div);
 
-      // Sync trigger.
-      div.innerHTML = DOMPurify.sanitize(payload);
+      // Async trigger.
+      function trigger(payload) {
+        div.innerHTML = DOMPurify.sanitize(payload);
+      }
     </script>
   </body>
 </html>

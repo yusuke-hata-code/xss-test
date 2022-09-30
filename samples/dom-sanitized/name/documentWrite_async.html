@@ -14,10 +14,14 @@
         window.name = "badvalue='a'";
       }
 
-      var payload = window.name;
+      setTimeout(function () {
+        trigger(window.name);
+      }, 10);
 
-      // Sync trigger.
-      eval(DOMPurify.sanitize(payload));
+      // Async trigger.
+      function trigger(payload) {
+        document.write(DOMPurify.sanitize(payload));
+      }
     </script>
   </body>
 </html>

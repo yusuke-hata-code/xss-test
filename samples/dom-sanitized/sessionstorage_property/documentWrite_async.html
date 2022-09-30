@@ -14,10 +14,17 @@
         sessionStorage.badValue = Math.random();
       }
 
-      var payload = sessionStorage.badValue;
+      setTimeout(function () {
+        trigger(sessionStorage.badValue); // Using the async trigger.
 
-      // Sync trigger.
-      document.write(DOMPurify.sanitize(payload));
+        // Clean up the sessionStorage to avoid side-effects on subsequent tests.
+        sessionStorage.clear();
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        document.write(DOMPurify.sanitize(payload));
+      }
     </script>
   </body>
 </html>

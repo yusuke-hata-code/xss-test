@@ -13,7 +13,7 @@
       /*
        * Return the value of the first cookie with the given name.
        */
-      function lookupCookie(name) {
+      var lookupCookie = function (name) {
         var parts = document.cookie.split(/\s*;\s*/);
         var nameEq = name + '=';
         for (var i = 0; i < parts.length; i++) {
@@ -21,17 +21,15 @@
             return parts[i].substr(nameEq.length);
           }
         }
+      };
+      setTimeout(function () {
+        trigger(lookupCookie('ThisCookieIsTotallyRandomAndCantPossiblyBeSet'));
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        eval(DOMPurify.sanitize(payload));
       }
-
-      // Pre-seed the cookie, if it has not been set yet.
-      if (!lookupCookie('badValue')) {
-        document.cookie = 'badValue="a"';
-      }
-
-      var payload = lookupCookie('badValue');
-
-      // Sync trigger.
-      document.write(DOMPurify.sanitize(payload));
     </script>
   </body>
 </html>

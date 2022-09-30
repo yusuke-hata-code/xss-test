@@ -15,12 +15,16 @@
         location.href = location.href;
       } else {
         var payload = "referrer = '" + document.referrer + "'";
-      }
-      var div = document.createElement('div');
-      document.documentElement.appendChild(div);
 
-      // Sync trigger.
-      div.innerHTML = DOMPurify.sanitize(payload);
+        setTimeout(function () {
+          trigger("referrer = '" + document.referrer + "'");
+        }, 10);
+      }
+
+      // Async trigger.
+      function trigger(payload) {
+        eval(DOMPurify.sanitize(payload));
+      }
     </script>
   </body>
 </html>
