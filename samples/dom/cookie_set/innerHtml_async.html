@@ -21,14 +21,17 @@
       if (!lookupCookie('badValue')) {
         document.cookie = 'badValue="a"';
       }
-
-      var payload = lookupCookie('badValue');
-
       var div = document.createElement('div');
       document.documentElement.appendChild(div);
 
-      // Sync trigger.
-      div.innerHTML = payload;
+      setTimeout(function () {
+        trigger(lookupCookie('badValue'));
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        div.innerHTML = payload;
+      }
     </script>
   </body>
 </html>
