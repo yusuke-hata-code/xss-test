@@ -149,21 +149,6 @@ npm run test-u
 
 個別の詳細は [Releases](https://github.com/yusuke-hata-code/xss-test/releases) にて
 
-## 4. vite.config(並列処理では動かない場合)
-
-並列処理を停止したい→以下のようにvite.config.jsを自身のリポジトリのrootに追加する
-```javascript
-/// <reference types="vitest" />
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-  test: {
-    threads: false,
-    testTimeout: 6000,
-  },
-});
-```
-
 # テストサンプルの概要
 
 合計178サンプル
