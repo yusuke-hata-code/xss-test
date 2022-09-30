@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script>
+      if (!localStorage.getItem('badValue')) {
+        localStorage.setItem('badValue', Math.random());
+      }
+
+      setTimeout(function () {
+        trigger(localStorage.getItem('badValue')); // Using the async trigger.
+
+        // Clean up the localStorage to avoid causing side-effect on subsequent tests.
+        localStorage.clear();
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        document.write(payload);
+      }
+    </script>
+  </body>
+</html>
