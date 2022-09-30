@@ -8,11 +8,21 @@
 git submodule add git@github.com:yusuke-hata-code/xss-test.git
 ```
 
-submodule の更新方法
+バージョンを指定する場合
 
 ```bash
-git submodule foreach git pull origin main
+cd xss-test
+# バージョン一覧
+git tag
+git checkout 1.1.0
 ```
+
+> **Note**
+> submodule の更新方法
+>
+> ```bash
+> git submodule foreach git pull origin main
+> ```
 
 ## 2. assertXSS.mjs の作成
 
@@ -55,34 +65,65 @@ export const assertXSS = async ({ url }) => {
 };
 ```
 
+### assertSnapshotXSS 関数の定義
+
+- snapshot テスト用、返り値はなんでもよい
+
+```javascript
+export const assertSnapshotXSS = async ({ url }) => {
+  return url;
+};
+```
+
 ### オプションの設定
 
 - 以下はデフォルト値
 
-```json
+```javascript
 export const setting = {
-  webServer: false, //webServerを起動する
+  disableWebServer: false, //webServerを起動しない
   testConcurrent: false, //同カテゴリ下のテストを並行実行する
   fileExtensions: ['.html'], //テストする拡張子指定
   skipSanitizedSamples: false, //無害化サンプルテストをスキップする
+  snapshotWebserverPort: 8888, //snapshotテスト時のwebサーバのポート、0でauto
 };
 ```
 
 ## 3. vitest の install
 
-`vitest` と `@vitest/ui` を自身のリポジトリにインストールする
-
 ```bash
 npm i -D vitest @vitest/ui serve-handler
 ```
 
-package.json に以下を追記
+自リポジトリのpackage.json に以下を追記
 
 ```json
 "scripts": {
   "test": "vitest -w false",
-  "test:open": "vitest --ui"
+  "test:open": "vitest --ui",
+  "test-u": "vitest -u",
+  "test-samples": "npm run test -- xss-test/*.test.mjs",
+  "test-snapshot": "npm run test -- xss-test/*.spec.mjs"
 }
+```
+
+自リポジトリ直下にvitest.config.js を作成
+
+```javascript
+import { defineConfig } from 'vitest/config';
+import path from 'path';
+
+export default defineConfig({
+  test: {
+    resolveSnapshotPath: (testPath, snapExtension) => {
+      return path.join(
+        path.dirname(testPath),
+        '../__snapshots__',
+        path.basename(testPath) + snapExtension
+      );
+    },
+  },
+});
 ```
 
 実行
@@ -92,7 +133,21 @@ package.json に以下を追記
 npm run test
 # GUI
 npm run test:open
+# snapshotの更新
+npm run test-u
 ```
+
+# バージョンの変更基準について
+
+`major.minor.patch` の形式
+
+|        | 変更基準                           |
+| ------ | ---------------------------------- |
+| major  | サンプルの変更                     |
+| mainor | ユーザ側での設定変更が必要         |
+| patch  | その他(ユーザ側での設定変更は不要) |
+
+個別の詳細は [Releases](https://github.com/yusuke-hata-code/xss-test/releases) にて
 
 ## 4. vite.config(並列処理では動かない場合)
 
@@ -130,7 +185,7 @@ export default defineConfig({
 - test 以下に、カテゴリ.test.mjs ファイルを作ってください
 
 ```text
-test
+xss-test
 - カテゴリ.test.mjs
 - samples/
   - カテゴリ/
