@@ -22,10 +22,14 @@
         document.cookie = 'badValue="a"';
       }
 
-      var payload = lookupCookie('badValue');
+      setTimeout(function () {
+        trigger(lookupCookie('badValue'));
+      }, 10);
 
-      // Sync trigger.
-      document.write(payload);
+      // Async trigger.
+      function trigger(payload) {
+        document.write(payload);
+      }
     </script>
   </body>
 </html>
