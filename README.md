@@ -137,6 +137,10 @@ npm run test:open
 npm run test-u
 ```
 
+- 並列処理によってテストが上手くいかない場合
+
+[Vitestのthreadオプション](https://vitest.dev/config/#threads)
+
 # バージョンの変更基準について
 
 `major.minor.patch` の形式
