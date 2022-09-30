@@ -24,7 +24,7 @@ git checkout 1.1.0
 > git submodule foreach git pull origin main
 > ```
 
-## 2. assertXSS.mjs の作成
+## 2. xss-test.mjs の作成
 
 - サブモジュールと同じ階層に `xss-test.mjs` を作成
 - assertXSS 関数の定義
