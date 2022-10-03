@@ -30,7 +30,7 @@ Async Trigger を新たに[source]/[sink]\_async.html として分離した．�
 - cookie_set/eval.html
 - cookie_set/documentWrite.html
 - cookie_set/eval.html
-- cookiie_set/innerHtml.html
+- cookie_set/innerHtml.html
 - localstorage_array/eval.html
 - localstorage_function/documentWrite.html
 - localstorage_function/eval.html
