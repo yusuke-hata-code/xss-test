@@ -55,7 +55,7 @@ setTimeout(function () {
 }, 10);
 ```
 
-##その他の async Trigger が混在していると思われるサンプル
+## その他の async Trigger が混在していると思われるサンプル
 
 以下の 6 サンプルは async Trigger のコメントがあるが，発火するか不明なため分離していない．
 
