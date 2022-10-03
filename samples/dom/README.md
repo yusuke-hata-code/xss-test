@@ -24,10 +24,9 @@ SessionStorage - Property - documentWrite
 ## 取得元からの改変点
 
 以下の 21 サンプルは sync Trigger と Async Trigger が混在している．
-Async Trigger を新たに[source]/[sink]\_async.html として分離した．結果的に syncTrigger21 サンプル asyncTrigger 21 サンプルで，合計サンプル数は取得元からは 21 サンプル増加している．
+Async Trigger を新たに[source]/[sink]\_async.html として分離した．結果的に syncTrigger21 サンプル asyncTrigger 20 サンプルで，合計サンプル数は取得元からは 21 サンプル増加している．
 
 - cookie/eval.html
-- cookie_set/eval.html
 - cookie_set/documentWrite.html
 - cookie_set/eval.html
 - cookie_set/innerHtml.html

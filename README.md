@@ -155,13 +155,13 @@ npm run test-u
 
 # テストサンプルの概要
 
-合計 178 サンプル
+合計 218 サンプル
 | カテゴリ|サンプル数|概要|
 | ---- | ---- |----|
 | [address](./samples/address/) | 29 |firing range の Address DOM XSS サンプル|
 | [address-sanitized](./samples/address-sanitized/) | 29 |firing range の Address DOM XSS サンプルを無害化したもの|
-| [dom](./samples/dom/) | 55 |firing range の Address DOM XSS サンプル|
-| [dom-sanitized](./samples/dom-sanitized/) | 55 |firing range の Address DOM XSS サンプルを無害化したもの|
+| [dom](./samples/dom/) | 54 |firing range の Address DOM XSS サンプル|
+| [dom-sanitized](./samples/dom-sanitized/) | 54 |firing range の Address DOM XSS サンプルを無害化したもの|
 |[urldom](./samples/urldom/)|26|firing range の UIRL-based DOM XSS サンプル|
 |[urldom-sanitized](./samples/urldom-sanitized/)|26|firing range の UIRL-based DOM XSS サンプルを無害化したもの|
 
