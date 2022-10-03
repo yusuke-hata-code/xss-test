@@ -139,7 +139,7 @@ npm run test-u
 
 - 並列処理によってテストが上手くいかない場合
 
-[Vitestのthreadオプション](https://vitest.dev/config/#threads)
+[Vitest の thread オプション](https://vitest.dev/config/#threads)
 
 # バージョンの変更基準について
 
@@ -160,12 +160,13 @@ npm run test-u
 | ---- | ---- |----|
 | [address](./samples/address/) | 29 |firing range の Address DOM XSS サンプル|
 | [address-sanitized](./samples/address-sanitized/) | 29 |firing range の Address DOM XSS サンプルを無害化したもの|
-| [dom](./samples/dom/) | 34 |firing range の Address DOM XSS サンプル|
-| [dom-sanitized](./samples/dom-sanitized/) | 34 |firing range の Address DOM XSS サンプルを無害化したもの|
+| [dom](./samples/dom/) | 55 |firing range の Address DOM XSS サンプル|
+| [dom-sanitized](./samples/dom-sanitized/) | 55 |firing range の Address DOM XSS サンプルを無害化したもの|
 |[urldom](./samples/urldom/)|26|firing range の UIRL-based DOM XSS サンプル|
 |[urldom-sanitized](./samples/urldom-sanitized/)|26|firing range の UIRL-based DOM XSS サンプルを無害化したもの|
 
 - 無害化は DOMPurify.sanitized()を用いてサニタイズを行っている．
+- dom は 1 サンプルに sync Trigger と Async Trigger の 2 つ Sink が含まれていたものが 21 サンプルあったため，これらを別ファイルに分割している．また，同様に dom-sanitized に関しても 21 サンプル増えている．
 
 # テストサンプルの追加方法
 
