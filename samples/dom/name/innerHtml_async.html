@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script>
+      if (window.name == '') {
+        window.name = "badvalue='a'";
+      }
+
+      setTimeout(function () {
+        trigger(window.name);
+      }, 10);
+      var div = document.createElement('div');
+      document.documentElement.appendChild(div);
+
+      // Async trigger.
+      function trigger(payload) {
+        div.innerHTML = payload;
+      }
+    </script>
+  </body>
+</html>

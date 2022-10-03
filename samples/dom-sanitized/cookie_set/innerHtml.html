@@ -30,19 +30,11 @@
 
       var payload = lookupCookie('badValue');
 
-      setTimeout(function () {
-        trigger(lookupCookie('badValue'));
-      }, 10);
       var div = document.createElement('div');
       document.documentElement.appendChild(div);
 
       // Sync trigger.
       div.innerHTML = DOMPurify.sanitize(payload);
-
-      // Async trigger.
-      function trigger(payload) {
-        div.innerHTML = DOMPurify.sanitize(payload);
-      }
     </script>
   </body>
 </html>

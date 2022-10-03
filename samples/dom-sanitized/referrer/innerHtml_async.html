@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      if (document.referrer == '') {
+        // If the referrer is not set, we set the referrer by reloading the page.
+        location.href = location.href;
+      } else {
+        setTimeout(function () {
+          trigger("referrer = '" + document.referrer + "'");
+        }, 10);
+      }
+      var div = document.createElement('div');
+      document.documentElement.appendChild(div);
+
+      // Async trigger.
+      function trigger(payload) {
+        div.innerHTML = DOMPurify.sanitize(payload);
+      }
+    </script>
+  </body>
+</html>

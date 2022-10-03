@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Toxic DOM</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"
+      integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      if (!sessionStorage.getItem('badValue')) {
+        sessionStorage.setItem('badValue', Math.random());
+      }
+
+      setTimeout(function () {
+        trigger(sessionStorage.getItem('badValue'));
+        // Clean up the sessionStorage to avoid side-effects on subsequent tests.
+        sessionStorage.clear();
+      }, 10);
+
+      // Async trigger.
+      function trigger(payload) {
+        document.write(DOMPurify.sanitize(payload));
+      }
+    </script>
+  </body>
+</html>
