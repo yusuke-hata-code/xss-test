@@ -42,7 +42,7 @@ Async Trigger を新たに[source]/[sink]\_async.html として分離した．�
 - referrer/documentWrite.html
 - referrer/eval.html
 - referrer/innerHtml.html
-- sessionstorage_array/eval.h tml
+- sessionstorage_array/eval.html
 - sessionstorage_function/documentWrite.html
 - sessionstorage_function/eval.html
 - sessionstorage_function/innerHtml.html
