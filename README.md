@@ -107,7 +107,7 @@ npm i -D vitest @vitest/ui serve-handler
 }
 ```
 
-自リポジトリ直下に vitest.config.js を作成
+自リポジトリ直下に vitest.config.ts を作成
 
 ```javascript
 import { defineConfig } from 'vitest/config';
