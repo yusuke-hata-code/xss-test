@@ -50,7 +50,7 @@ export const assertXSS = async ({ fullPath, url }) => {
 サンプルのローカルファイルパスを用いる例
 
 ```javascript
-export  const assertXSS = ({ fullPath }) => {
+export const assertXSS = async ({ fullPath }) => {
   const result = await YOUR_ANALYZE_SYSTEM(fullPath);
   return Boolean(result);
 };
