@@ -101,7 +101,7 @@ npm i -D vitest @vitest/ui serve-handler
 "scripts": {
   "test": "vitest -w false",
   "test:open": "vitest --ui",
-  "test-u": "vitest -u",
+  "test-u": "vitest -u -w false",
   "test-samples": "npm run test -- xss-test/*.test.mjs",
   "test-snapshot": "npm run test -- xss-test/*.spec.mjs"
 }
