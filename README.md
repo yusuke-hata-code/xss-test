@@ -81,7 +81,7 @@ export const assertSnapshotXSS = async ({ url }) => {
 
 ```javascript
 export const setting = {
-  disableWebServer: false, //webServerを起動しない
+  disableWebServer: false, //webServerを起動する
   testConcurrent: false, //同カテゴリ下のテストを並行実行する
   fileExtensions: ['.html'], //テストする拡張子指定
   skipSanitizedSamples: false, //無害化サンプルテストをスキップする
