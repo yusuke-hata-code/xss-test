@@ -147,8 +147,8 @@ npm run test-u
 
 |        | 変更基準                           |
 | ------ | ---------------------------------- |
-| major  | サンプルの変更                     |
-| mainor | ユーザ側での設定変更が必要         |
+| major  | サンプルの追加                     |
+| minor | ユーザ側での設定変更が必要かサンプルの修正         |
 | patch  | その他(ユーザ側での設定変更は不要) |
 
 個別の詳細は [Releases](https://github.com/yusuke-hata-code/xss-test/releases) にて
