@@ -12,6 +12,7 @@
     <script>
       if (document.referrer == '') {
         // If the referrer is not set, we set the referrer by reloading the page.
+        // eslint-disable-next-line
         location.href = location.href;
       } else {
         var payload = "referrer = '" + document.referrer + "'";
