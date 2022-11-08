@@ -77,14 +77,14 @@ export const assertSnapshotXSS = async ({ url }) => {
 
 ### オプションの設定
 
-- 以下はデフォルト値
+- 以下はデフォルト値とオプションの説明
 
 ```javascript
 export const setting = {
-  disableWebServer: false, //webServerを起動する
-  testConcurrent: false, //同カテゴリ下のテストを並行実行する
-  fileExtensions: ['.html'], //テストする拡張子指定
-  skipSanitizedSamples: false, //無害化サンプルテストをスキップする
+  disableWebServer: false, //webServerを起動しないかどうか
+  testConcurrent: false, //同カテゴリ下のテストを並行実行
+  fileExtensions: ['.html'], //テストする拡張子
+  skipSanitizedSamples: false, //無害化サンプルテストをスキップ
   snapshotWebserverPort: 8888, //snapshotテスト時のwebサーバのポート、0でauto
 };
 ```
