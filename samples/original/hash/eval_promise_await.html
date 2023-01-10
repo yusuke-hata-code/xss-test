@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>original</title>
+  </head>
+  <body>
+    <script type="module">
+      const getPayload = new Promise((resolve) => {
+        const payload = decodeURIComponent(location.hash.substr(1));
+        setTimeout(() => resolve(payload), 100);
+      });
+
+      eval(await getPayload);
+    </script>
+  </body>
+</html>

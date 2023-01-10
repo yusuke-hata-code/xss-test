@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>original</title>
+  </head>
+  <body>
+    <script>
+      const payload = decodeURIComponent(location.hash.substr(1))
+      document.body.outerHTML = payload;
+    </script>
+  </body>
+</html>

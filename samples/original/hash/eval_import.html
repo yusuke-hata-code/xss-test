@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>original</title>
+  </head>
+  <body>
+    <script type="module">
+      import { evaluate } from './eval_import.js';
+      const payload = decodeURIComponent(location.hash.substr(1));
+      evaluate(payload);
+    </script>
+  </body>
+</html>
