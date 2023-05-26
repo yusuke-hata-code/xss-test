@@ -7,9 +7,10 @@
 <body>
   <script src="./jquery.js"></script>
 
+  <div id="divEl">hoge</div>
   <script>
     var payload = window.location.hash.substr(1);
-    ($('<div>', { id: "divEl", html: `${payload}` })).insertAfter("body");
+    $("#divEl").replaceWith(`<div id="divEll">${payload}</div>`);
   </script>
 </body>
 
