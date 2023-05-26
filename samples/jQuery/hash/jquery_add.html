@@ -1,0 +1,18 @@
+<html>
+
+<head>
+  <title>original</title>
+</head>
+
+<body>
+  <script src="./jquery.js"></script>
+  <div>
+    <img src="" />
+
+    <script>
+      const payload = location.hash.substr(1);
+      $("img").attr("onerror", payload)
+    </script>
+</body>
+
+</html>
