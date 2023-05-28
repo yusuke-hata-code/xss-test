@@ -9,6 +9,7 @@
 
   <script>
     var payload = window.location.hash.substr(1);
+    $("html").append($('<div>', { id: 'divEl' }));
     $('#divEl').html(payload);
   </script>
 </body>
