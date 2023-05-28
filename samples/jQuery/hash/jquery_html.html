@@ -1,14 +1,16 @@
 <html>
-  <head>
-    <title>original</title>
-  </head>
-  <body>
-    <script src="./jquery.js"></script>
 
-    <script>
-      var payload = window.location.hash.substr(1);
-      $("html").append($('<div>', { id: 'divEl' }));
-      $('#divEl').html(payload);
-    </script>
-  </body>
+<head>
+  <title>original</title>
+</head>
+
+<body>
+  <script src="./jquery.js"></script>
+
+  <script>
+    var payload = window.location.hash.substr(1);
+    $('#divEl').html(payload);
+  </script>
+</body>
+
 </html>
