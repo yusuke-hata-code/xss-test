@@ -7,6 +7,8 @@
     "lib": "lib"
   },
   "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.7.1"
   },
   "scripts": {
