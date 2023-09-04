@@ -1,3 +1,1 @@
-SinkがjQueryAPI
-
--$().html()
+Sink が jQueryAPI
