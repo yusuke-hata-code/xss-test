@@ -145,11 +145,11 @@ npm run test-u
 
 `major.minor.patch` の形式
 
-|        | 変更基準                           |
-| ------ | ---------------------------------- |
-| major  | サンプルの追加                     |
-| minor | ユーザ側での設定変更が必要かサンプルの修正         |
-| patch  | その他(ユーザ側での設定変更は不要) |
+|       | 変更基準                                   |
+| ----- | ------------------------------------------ |
+| major | サンプルの追加                             |
+| minor | ユーザ側での設定変更が必要かサンプルの修正 |
+| patch | その他(ユーザ側での設定変更は不要)         |
 
 個別の詳細は [Releases](https://github.com/yusuke-hata-code/xss-test/releases) にて
 
@@ -164,11 +164,11 @@ npm run test-u
 | [dom-sanitized](./samples/dom-sanitized/) | 32 |firing range の Address DOM XSS サンプルを無害化したもの|
 |[urldom](./samples/urldom/)|26|firing range の UIRL-based DOM XSS サンプル|
 |[urldom-sanitized](./samples/urldom-sanitized/)|14|firing range の UIRL-based DOM XSS サンプルを無害化したもの|
-|[recentAPI](./samples/recentAPI/)|7|Firing Rangeに含まれていなかったSinkや記法|
-|[jQuery](./samples/jQuery/)|13|jQueryのSink APIサンプル|
+|[recentAPI](./samples/recentAPI/)|7|Firing Range に含まれていなかった Sink や記法|
+|[jQuery](./samples/jQuery/)|13|jQuery の Sink API サンプル|
 
 - 無害化は DOMPurify.sanitized()を用いてサニタイズを行っている．
-- dom は 1 サンプルに sync Trigger と Async Trigger の 2 つ Sink が含まれていたものが 21 サンプルあったため，これらを別ファイルに分割している．また，同様に dom-sanitized に関しても 12 サンプル増えている．
+- dom は 1 サンプルに sync Trigger と Async Trigger の 2 つ Sink が含まれていたものが 20 サンプルあったため，これらを別ファイルに分割している．また，同様に dom-sanitized に関しても 12 サンプル増えている．
 
 # テストサンプルの追加方法
 

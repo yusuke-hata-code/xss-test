@@ -4,6 +4,7 @@ https://public-firing-range.appspot.com/dom/dompropagation/
 ## 含めていないもの
 
 ### LocalStorage
+
 Within a script include:
 
 LocalStorage - Array - eval  
@@ -13,6 +14,7 @@ LocalStorage - Function - documentWrite
 LocalStorage - Property - documentWrite
 
 ### SessionStorage
+
 Within a script include:
 
 SessionStorage - Array - eval  
@@ -23,8 +25,8 @@ SessionStorage - Property - documentWrite
 
 ## 取得元からの改変点
 
-以下の 20 サンプルは sync Trigger と Async Trigger が混在している．
-Async Trigger を新たに[source]/[sink]\_async.html として分離した．結果的に syncTrigger20 サンプル asyncTrigger 20 サンプルで，合計サンプル数は取得元からは 12 サンプル増加している．
+以下の 12 サンプルは sync Trigger と Async Trigger が混在している．
+Async Trigger を新たに[source]/[sink]\_async.html として分離した．結果的に syncTrigger12 サンプル asyncTrigger 12 サンプルで，合計サンプル数は取得元からは 12 サンプル増加している．
 
 - cookie_set/documentWrite.html
 - cookie_set/innerHtml.html
