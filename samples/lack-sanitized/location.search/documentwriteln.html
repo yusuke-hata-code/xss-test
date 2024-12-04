@@ -9,7 +9,7 @@
     function sanitize(word) {
       return word.replace('"', "'");
     }
-    var payload = window.location.hash.substr(1);
+    var payload = window.location.search.substr(1);
     document.writeln(sanitize(decodeURIComponent(payload)));
   </script>
 </body>
