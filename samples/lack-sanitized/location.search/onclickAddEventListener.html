@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title>Address based DOM XSS</title>
+</head>
+
+<body>
+  <script>
+    function sanitize(word) {
+      return word.replace('"', "'");
+    }
+    var payload = window.location.search.substr(1);
+    var div = document.createElement('div');
+    div.addEventListener(
+      'click',
+      new Function(sanitize(payload)),
+      false
+    );
+    document.documentElement.appendChild(div);
+  </script>
+</body>
+
+</html>
