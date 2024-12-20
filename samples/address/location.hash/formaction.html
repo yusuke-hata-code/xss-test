@@ -6,7 +6,7 @@
     <script>
       var payload = window.location.hash.substr(1);
       var form = document.createElement('form');
-      form.setAttribute('action', payload);
+      form.setAttribute('action', decodeURIComponent(payload));
       form.innerHTML = "<input type='submit'></input>";
       document.documentElement.appendChild(form);
     </script>
