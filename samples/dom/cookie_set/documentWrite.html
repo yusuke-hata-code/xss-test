@@ -25,7 +25,7 @@
       var payload = lookupCookie('badValue');
 
       // Sync trigger.
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
     </script>
   </body>
 </html>
