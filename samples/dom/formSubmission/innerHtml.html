@@ -40,11 +40,11 @@
       document.documentElement.appendChild(div);
 
       // Sync trigger.
-      div.innerHTML = payload;
+      div.innerHTML = decodeURIComponent(payload);
 
       // Async trigger.
       function trigger(payload) {
-        div.innerHTML = payload;
+        div.innerHTML = decodeURIComponent(payload);
       }
     </script>
   </body>
