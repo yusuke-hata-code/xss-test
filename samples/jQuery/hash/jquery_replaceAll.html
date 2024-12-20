@@ -1,0 +1,18 @@
+<html>
+
+<head>
+  <title>original</title>
+</head>
+
+<body>
+  <div id="divEl">hoge</div>
+  <div id="divEl">hogehoge</div>
+  <script src="./jquery.js"></script>
+
+  <script>
+    var payload = window.location.hash.substr(1);
+    $(`<div id="divElement">${payload}</div>`).replaceAll("#divEl");
+  </script>
+</body>
+
+</html>

@@ -6,9 +6,6 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {
-    "prettier": "^2.7.1"
-  },
   "scripts": {
     "test": "vitest -w false",
     "test:open": "vitest --ui",

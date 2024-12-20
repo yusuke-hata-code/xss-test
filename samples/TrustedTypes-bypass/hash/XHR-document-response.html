@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script';">
+</head>
+
+<body>
+  <script>
+    let payload = location.hash.substr(1);
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+      document.body.appendChild(this.response.querySelector('#content'));
+    }
+    xhr.open("GET", payload);
+    xhr.responseType = "document";
+    xhr.send();
+  </script>
+</body>
+
+</html>
