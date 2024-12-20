@@ -5,7 +5,7 @@
   <body>
     <script>
       const payload = decodeURIComponent(location.hash.substr(1));
-      document.body.insertAdjacentHTML('afterbegin', payload);
+      document.body.insertAdjacentHTML('afterbegin', decodeURIComponent(payload));
     </script>
   </body>
 </html>
