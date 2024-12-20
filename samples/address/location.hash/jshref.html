@@ -6,7 +6,7 @@
     <script>
       var payload = window.location.hash.substr(1);
       var a = document.createElement('a');
-      a.setAttribute('href', payload);
+      a.setAttribute('href', decodeURIComponent(payload));
       document.documentElement.appendChild(a);
     </script>
   </body>
