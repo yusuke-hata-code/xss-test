@@ -10,7 +10,7 @@
       var payload = localStorage.badValue;
 
       // Sync trigger.
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
       localStorage.clear();
     </script>
   </body>
