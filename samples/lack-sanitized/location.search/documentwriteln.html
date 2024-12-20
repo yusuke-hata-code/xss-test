@@ -1,0 +1,17 @@
+<html>
+
+<head>
+  <title>Address based DOM XSS</title>
+</head>
+
+<body>
+  <script>
+    function sanitize(word) {
+      return word.replace('"', "'");
+    }
+    var payload = window.location.search.substr(1);
+    document.writeln(sanitize(decodeURIComponent(payload)));
+  </script>
+</body>
+
+</html>
