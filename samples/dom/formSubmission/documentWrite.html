@@ -33,11 +33,11 @@
       };
 
       document.body.appendChild(form); // Sync trigger.
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
 
       // Async trigger.
       function trigger(payload) {
-        document.write(payload);
+        document.write(decodeURIComponent(payload));
       }
     </script>
   </body>
