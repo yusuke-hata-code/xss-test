@@ -7,7 +7,7 @@
       var postMessageHandler = function (msg) {
         var content = JSON.parse(msg.data);
         var div = document.createElement('div');
-        div.innerHTML = content.html;
+        div.innerHTML = decodeURIComponent(content.html);
         document.documentElement.appendChild(div);
       };
 

@@ -10,7 +10,7 @@
       document.documentElement.appendChild(div);
 
       var divEl = document.getElementById('divEl');
-      divEl.innerHTML = payload;
+      divEl.innerHTML = decodeURIComponent(payload);
     </script>
   </body>
 </html>

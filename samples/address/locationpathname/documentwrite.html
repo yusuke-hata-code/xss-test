@@ -5,7 +5,7 @@
   <body>
     <script>
       var payload = window.location.pathname;
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
     </script>
   </body>
 </html>

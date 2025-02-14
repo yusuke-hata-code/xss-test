@@ -10,7 +10,7 @@
   <div id="divEl">hoge</div>
   <script>
     var payload = window.location.hash.substr(1);
-    $("#divEl").replaceWith(`<div id="divEll">${payload}</div>`);
+    $("#divEl").replaceWith(`<div id="divEll">${decodeURIComponent(payload)}</div>`);
   </script>
 </body>
 

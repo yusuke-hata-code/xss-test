@@ -27,11 +27,11 @@
       input.addEventListener('change', xssIt);
 
       document.body.appendChild(input); // Sync trigger.
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
 
       // Async trigger.
       function trigger(payload) {
-        document.write(payload);
+        document.write(decodeURIComponent(payload));
       }
     </script>
   </body>

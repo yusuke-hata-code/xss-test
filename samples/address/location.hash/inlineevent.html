@@ -7,7 +7,7 @@
       var payload = window.location.hash.substr(1);
       var div = document.createElement('div');
       div.innerHTML =
-        "<div onclick='" + payload.replace(/'/g, '"') + "'>div</div>";
+        "<div onclick='" + decodeURIComponent(payload).replace(/'/g, '"') + "'>div</div>";
       document.documentElement.appendChild(div);
     </script>
   </body>

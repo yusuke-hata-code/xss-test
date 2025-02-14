@@ -15,7 +15,7 @@
       document.documentElement.appendChild(div);
 
       // Sync trigger.
-      div.innerHTML = payload;
+      div.innerHTML = decodeURIComponent(payload);
     </script>
   </body>
 </html>

@@ -10,7 +10,7 @@
 
       var payload = sessionStorage.badValue;
       // Sync trigger.
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
       sessionStorage.clear();
     </script>
   </body>

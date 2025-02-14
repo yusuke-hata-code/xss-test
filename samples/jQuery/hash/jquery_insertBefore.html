@@ -9,7 +9,7 @@
 
   <script>
     var payload = window.location.hash.substr(1);
-    ($('<div>', { id: "divEl", html: `${payload}` })).insertBefore("body");
+    ($('<div>', { id: "divEl", html: `${decodeURIComponent(payload)}` })).insertBefore("body");
   </script>
 </body>
 

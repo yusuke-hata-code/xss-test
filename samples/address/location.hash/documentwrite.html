@@ -5,7 +5,7 @@
   <body>
     <script>
       var payload = window.location.hash.substr(1);
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
     </script>
   </body>
 </html>

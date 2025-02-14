@@ -11,7 +11,7 @@
       var payload = localStorage.getItem('badValue'); // Using sync trigger.
 
       // Sync trigger.
-      document.write(payload);
+      document.write(decodeURIComponent(payload));
       localStorage.clear();
     </script>
   </body>

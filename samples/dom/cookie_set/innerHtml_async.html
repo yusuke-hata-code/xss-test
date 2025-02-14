@@ -30,7 +30,7 @@
 
       // Async trigger.
       function trigger(payload) {
-        div.innerHTML = payload;
+        div.innerHTML = decodeURIComponent(payload);
       }
     </script>
   </body>

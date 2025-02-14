@@ -5,7 +5,7 @@
   <body>
     <script>
       const payload = decodeURIComponent(location.hash.substr(1))
-      document.body.outerHTML = payload;
+      document.body.outerHTML = decodeURIComponent(payload);
     </script>
   </body>
 </html>
