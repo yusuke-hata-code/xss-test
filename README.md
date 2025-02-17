@@ -155,7 +155,7 @@ npm run test-u
 
 # テストサンプルの概要
 
-合計 195 サンプル
+合計 221 サンプル
 | カテゴリ|サンプル数|概要|
 | ---- | ---- |----|
 | [address](./samples/address/) | 29 |firing range の Address DOM XSS サンプル|
@@ -163,9 +163,11 @@ npm run test-u
 | [dom](./samples/dom/) | 54 |firing range の Address DOM XSS サンプル|
 | [dom-sanitized](./samples/dom-sanitized/) | 32 |firing range の Address DOM XSS サンプルを無害化したもの|
 |[urldom](./samples/urldom/)|26|firing range の UIRL-based DOM XSS サンプル|
-|[urldom-sanitized](./samples/urldom-sanitized/)|14|firing range の UIRL-based DOM XSS サンプルを無害化したもの|
 |[recentAPI](./samples/recentAPI/)|7|Firing Range に含まれていなかった Sink や記法|
 |[jQuery](./samples/jQuery/)|13|jQuery の Sink API サンプル|
+|[TrustedTypes-bypass](./samples/TrustedTypes-bypass)|5|Trusted Types を設定していても XSS 攻撃を防ぐことができないサンプル|
+|[lack-sanitized](./samples/lack-sanitized)|36|サニタイズが不十分なサンプル|
+|[separateFlow](./samples/separateFlow)|1|SourceとSinkの間に直接のデータフローが存在しないサンプル|
 
 - 無害化は DOMPurify.sanitized()を用いてサニタイズを行っている．
 - dom は 1 サンプルに sync Trigger と Async Trigger の 2 つ Sink が含まれていたものが 20 サンプルあったため，これらを別ファイルに分割している．また，同様に dom-sanitized に関しても 12 サンプル増えている．
